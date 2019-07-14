@@ -1,0 +1,39 @@
+.Avatar
+{
+    float: left;
+    margin: 25px 25px;
+    align-self: initial;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.15);
+}
+.UserName{
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    width: 42px;
+    height: 30px;
+    font-family: "Century Gothic";
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #329eff;
+}
+.SideButton{
+    margin-top: 30px;
+    margin-right: 25px;
+    float: right;
+    height: 30px;
+    font-family: "Century Gothic";
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #329eff;
+}

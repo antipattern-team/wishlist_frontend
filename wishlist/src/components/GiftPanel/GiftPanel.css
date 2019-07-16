@@ -1,0 +1,54 @@
+.Panel{
+    width: 200px;
+    margin: 25px;
+    display: inline-block;
+}
+img{
+    width: 200px;
+}
+.GiftName{
+    text-align: left;
+    width: 200px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.Price{
+    text-align: left;
+    width: 195px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+.Description{
+    text-align: left;
+    padding-bottom: 5px;
+    width: 195px;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #b2b2b2;
+}
+.FavButton{
+    border: 0;
+    font-family: "Century Gothic";
+    width: 200px;
+    height: 40px;
+    border-radius: 21px;
+    background-image: linear-gradient(79deg, #7dc4ff, #6700ff);
+    vertical-align: center;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}

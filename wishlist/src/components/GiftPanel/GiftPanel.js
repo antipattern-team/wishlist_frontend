@@ -13,9 +13,7 @@ export default class GiftPanel extends React.Component {
                         с загадочным подводным миром. Она плавает очень далеко, ныряет глубоко и издалека услышит биение
                         вашего сердца.</h1>
                 </div>
-                <div className="FavButton">
-                    <text className="FavLabel">Добавить в избранное</text>
-                </div>
+                <button className="FavButton"> {this.props.buttonText} </button>
             </div>
         )
     }

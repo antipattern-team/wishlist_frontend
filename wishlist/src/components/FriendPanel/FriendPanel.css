@@ -4,8 +4,6 @@
     border-radius: 50px;
 }
 .friendName{
-    padding-bottom: 50px;
-    margin: 0;
     font-family: "Century Gothic";
     font-size: 25px;
     font-weight: normal;
@@ -24,13 +22,15 @@
     color: white;
 }
 .friendInfo{
-    text-align: left;
-    display: inline-block;
+
     height: 100px;
     margin-left: 20px;
 }
 .friendPanel
 {
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 30px;
 }

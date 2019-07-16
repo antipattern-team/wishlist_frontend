@@ -10,13 +10,13 @@ export default class Friends extends React.Component {
     render() {
         return (
 
-            <div className="Homepage">
-                <PageHeader sideButtonText="Вернуться"/>
+            <div>
+                <PageHeader to="/home" sideButtonText="Вернуться"/>
                 <div>
                     <PageTitle text="Мои друзья"/>
                     <SearchField defaultCaption="Начните вводить имя друга..."/>
                 </div>
-                <div>
+                <div className="friendList">
                     <FriendPanel avatar ={TonyPic} username = "Антон" />
                     <FriendPanel avatar ={KiraPic} username = "Кирилл" />
                     <FriendPanel avatar ={TonyPic} username = "Антон" />

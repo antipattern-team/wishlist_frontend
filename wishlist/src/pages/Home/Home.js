@@ -10,25 +10,20 @@ export default class Home extends React.Component {
         return (
 
             <div className="Homepage">
-                <PageHeader sideButtonText="Друзья"/>
+                <PageHeader to="/friends" sideButtonText="Друзья"/>
                 <div className = "HomeTop">
                     <AppTitle/>
                     <SearchField defaultCaption="Начните вводить название товара..."/>
                     <PageTitle text="Популярное"/>
                 </div>
                 <div className="GiftSection">
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
-                    <GiftPanel/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
+                    <GiftPanel buttonText="Добавить в избранное"/>
                 </div>
             </div>
         )

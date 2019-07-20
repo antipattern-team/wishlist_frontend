@@ -16,7 +16,7 @@ export default class Home extends React.Component {
                     <SearchField defaultCaption="Начните вводить название товара..."/>
                     <PageTitle text="Популярное"/>
                 </div>
-                <div className="GiftSection">
+                <div className="wishList">
                     <GiftPanel buttonText="Добавить в избранное"/>
                     <GiftPanel buttonText="Добавить в избранное"/>
                     <GiftPanel buttonText="Добавить в избранное"/>

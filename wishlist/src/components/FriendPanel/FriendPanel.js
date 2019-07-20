@@ -1,5 +1,6 @@
 import React from 'react';
 import './FriendPanel.css'
+import { Link} from 'react-router-dom';
 export default class FriendPanel extends React.Component {
     render() {
         return (
@@ -7,9 +8,11 @@ export default class FriendPanel extends React.Component {
                 <img className="friendAvatar" src={this.props.avatar}/>
                 <div className="friendInfo">
                     <h1 className="friendName">{this.props.username}</h1>
-                    <button className="friendButton">
-                        <text className="friendButtonLabel">Узнать, что подарить</text>
-                    </button>
+                    <Link to="/friend:id">
+                        <button className="friendButton">
+                            <text className="friendButtonLabel">Узнать, что подарить</text>
+                        </button>
+                    </Link>
                 </div>
             </div>
         )

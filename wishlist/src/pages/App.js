@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Home/Home'
 import MyProfile from './MyProfile/MyProfile'
-import { Router,Link,Switch,Route,Redirect} from 'react-router-dom';
+import { Router,Switch,Route,Redirect} from 'react-router-dom';
 import history from '../utils/history';
 import Friends from './Friends/Friends'
 import './App.css';

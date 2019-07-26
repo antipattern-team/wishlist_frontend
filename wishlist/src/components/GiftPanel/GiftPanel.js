@@ -6,7 +6,7 @@ export default class GiftPanel extends React.Component {
         return (
             <div className="Panel" >
                 <div>
-                    <img src={sharkpic}/>
+                    <img alt="" src={sharkpic}/>
                     <h1 className="GiftName">АКУЛА ИЗ ИКЕИ</h1>
                     <h1 className="Price">1 499.–</h1>
                     <h1 className="Description">Эта большая, но абсолютно безопасная синяя акула позволит вам познакомиться

@@ -2,23 +2,28 @@ import React from 'react';
 import  PageHeader from '../../components/PageHeader/PageHeader'
 import './MyProfile.css'
 import Pic from '../../img/drohkstYrRc.jpg'
-import WishList from '../../components/WishList/WishList'
-import  UserPanel from '../../components/UserPanel/UserPanel'
-import LoadingIcon from '../../components/LoadingIcon/LoadingIcon'
-import None from '../../components/None/None'
-import { Router,Link,Switch,Route,Redirect} from 'react-router-dom';
+import  GiftPanel from '../../components/GiftPanel/GiftPanel'
 export default class MyProfile extends React.Component {
     render() {
         return (
             <div className="ProfilePage">
                 <PageHeader to="/home" sideButtonText="Вернуться"/>
-                <UserPanel profilePic={Pic} username="Макс "/>
-                <Switch>
-                    <Route path="/my-profile/list" component={WishList}/>
-                    <Route path="/my-profile/loading" component={LoadingIcon}/>
-                    <Route path="/my-profile/none" component={None}/>
-                    <Redirect to = "/my-profile/loading"/>
-                </Switch>
+                <div className="userPanel">
+                    <img src={Pic} alt="" className="avatar"/>
+                    <div className="userInfo">
+                        <text className="username">Макс</text>
+                        <div>
+                            <text className="listButton">Хочу подарить</text>
+                            <text className="listButton">Хочу получить</text>
+                        </div>
+                        <button className="shareButton">Поделиться</button>
+                    </div>
+                </div>
+                <div className="GiftSection">
+                    <GiftPanel buttonText="Удалить"/>
+                    <GiftPanel buttonText="Удалить"/>
+                    <GiftPanel buttonText="Удалить"/>
+                </div>
             </div>
         )
     }

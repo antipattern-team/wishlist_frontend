@@ -1,7 +1,7 @@
 import React from 'react';
 import  Avatar from '../../img/drohkstYrRc.jpg'
 import './PageHeader.css'
-import { Router,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default class PageHeader extends React.Component {
     render() {
         return (

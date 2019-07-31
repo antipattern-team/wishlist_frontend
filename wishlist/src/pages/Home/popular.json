@@ -1,0 +1,27 @@
+[
+  {"ref": "real_url", "img": "img_url", "name": "name", "type": "type", "descr": "description", "price": 1337},
+  {
+    "ref": "real_url",
+    "img": "img_url",
+    "name": "name",
+    "type": "type",
+    "descr": "description",
+    "price": 1337
+  },
+  {
+    "ref": "real_url",
+    "img": "img_url",
+    "name": "name",
+    "type": "type",
+    "descr": "description",
+    "price": 1337
+  },
+  {
+    "ref": "real_url",
+    "img": "img_url",
+    "name": "name",
+    "type": "type",
+    "descr": "description",
+    "price": 1337
+  }
+]

@@ -4,9 +4,12 @@ import MyProfile from './MyProfile/MyProfile'
 import { Router,Switch,Route,Redirect} from 'react-router-dom';
 import history from '../utils/history';
 import Friends from './Friends/Friends'
+import connect from '@vkontakte/vkui-connect-promise';
 import './App.css';
 
 function App() {
+
+  //  connect.send("VKWebAppGetAuthToken", {"app_id": 6396978, "scope": "friends"});
   return (
       <Router history={ history }>
         <div className="App">

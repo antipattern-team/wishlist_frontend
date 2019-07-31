@@ -5,11 +5,11 @@ export default class WishList extends React.Component {
     render() {
         return (
                 <div className="wishList">
-                    <GiftPanel buttonText="Удалить"/>
-                    <GiftPanel buttonText="Удалить"/>
-                    <GiftPanel buttonText="Удалить"/>
-                    <GiftPanel buttonText="Удалить"/>
-                    <GiftPanel buttonText="Удалить"/>
+                    <GiftPanel buttonText={this.props.buttonText}/>
+                    <GiftPanel buttonText={this.props.buttonText}/>
+                    <GiftPanel buttonText={this.props.buttonText}/>
+                    <GiftPanel buttonText={this.props.buttonText}/>
+                    <GiftPanel buttonText={this.props.buttonText}/>
                 </div>
 
         )

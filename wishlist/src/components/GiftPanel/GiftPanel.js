@@ -7,11 +7,9 @@ export default class GiftPanel extends React.Component {
             <div className="Panel" >
                 <div>
                     <img alt="" src={sharkpic}/>
-                    <h1 className="GiftName">АКУЛА ИЗ ИКЕИ</h1>
-                    <h1 className="Price">1 499.–</h1>
-                    <h1 className="Description">Эта большая, но абсолютно безопасная синяя акула позволит вам познакомиться
-                        с загадочным подводным миром. Она плавает очень далеко, ныряет глубоко и издалека услышит биение
-                        вашего сердца.</h1>
+                    <h1 className="GiftName">{this.props.name}</h1>
+                    <h1 className="Price">{this.props.price}</h1>
+                    <h1 className="Description">{this.props.description}</h1>
                 </div>
                 <button className="FavButton"> {this.props.buttonText} </button>
             </div>

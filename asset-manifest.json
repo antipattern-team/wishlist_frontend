@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "../static/css/main.dc5983b5.chunk.css",
-    "main.js": "../static/js/main.a5a9fceb.chunk.js",
-    "main.js.map": "../static/js/main.a5a9fceb.chunk.js.map",
-    "runtime~main.js": "../static/js/runtime~main.3a34a6a7.js",
-    "runtime~main.js.map": "../static/js/runtime~main.3a34a6a7.js.map",
-    "static/js/2.418dbb82.chunk.js": "../static/js/2.418dbb82.chunk.js",
-    "static/js/2.418dbb82.chunk.js.map": "../static/js/2.418dbb82.chunk.js.map",
-    "index.html": "../index.html",
-    "precache-manifest.de6c3323a78d59816d8a5319f432f377.js": "../precache-manifest.de6c3323a78d59816d8a5319f432f377.js",
-    "service-worker.js": "../service-worker.js",
-    "static/css/main.dc5983b5.chunk.css.map": "../static/css/main.dc5983b5.chunk.css.map",
-    "static/media/Kira.jpg": "../static/media/Kira.d43be837.jpg",
-    "static/media/Loading.png": "../static/media/Loading.656fac48.png",
-    "static/media/Tony.jpg": "../static/media/Tony.56215a16.jpg",
-    "static/media/Very_sad_emoji_icon_png.png": "../static/media/Very_sad_emoji_icon_png.8ff016a2.png",
-    "static/media/drohkstYrRc.jpg": "../static/media/drohkstYrRc.bdac82e2.jpg",
-    "static/media/shark.webp": "../static/media/shark.74bbcbf5.webp"
+    "main.css": "./static/css/main.dc5983b5.chunk.css",
+    "main.js": "./static/js/main.9b9c04f9.chunk.js",
+    "main.js.map": "./static/js/main.9b9c04f9.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.418dbb82.chunk.js": "./static/js/2.418dbb82.chunk.js",
+    "static/js/2.418dbb82.chunk.js.map": "./static/js/2.418dbb82.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.dd7c3160903f00bfb1a0289c8c24cc53.js": "./precache-manifest.dd7c3160903f00bfb1a0289c8c24cc53.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.dc5983b5.chunk.css.map": "./static/css/main.dc5983b5.chunk.css.map",
+    "static/media/Kira.jpg": "./static/media/Kira.d43be837.jpg",
+    "static/media/Loading.png": "./static/media/Loading.656fac48.png",
+    "static/media/Tony.jpg": "./static/media/Tony.56215a16.jpg",
+    "static/media/Very_sad_emoji_icon_png.png": "./static/media/Very_sad_emoji_icon_png.8ff016a2.png",
+    "static/media/drohkstYrRc.jpg": "./static/media/drohkstYrRc.bdac82e2.jpg",
+    "static/media/shark.webp": "./static/media/shark.74bbcbf5.webp"
   }
 }

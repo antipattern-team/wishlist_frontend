@@ -13,23 +13,22 @@ function getPopular() {
     fetch('http://wishlist.kpacubo.xyz/products/popular',
         {
             method: "GET",
-            mode:"cors",
+            mode: "cors",
             credentials: 'include'
         })
-        .then(response =>
-        {
+        .then(response => {
             return response.text().then((text) => {
-                console.log(text);
                 return text ? JSON.parse(text) : null;
             })
         }).then((data) => {
-            popular = data.data;
-    }).catch(()=> popular='');
+            console.log(data.data);
+        popular = data.data;
+    }).catch(() => popular = '');
     return popular;
-}
+};
 export default class Home extends React.Component {
+
     render() {
-       console.log( getPopular());
         /*const json ="[{\"ref\": \"real_url\", \"img\": \"img_url\", \"name\": \"Lol\", \"type\": \"type\", \"descr\": \"description\", \"price\": 1337},{\"ref\": \"real_url\", \"img\": \"img_url\", \"name\": \"kek\", \"type\": \"type\", \"descr\": \"description\", \"price\": 1337},{\"ref\": \"real_url\", \"img\": \"img_url\", \"name\": \"cheburek\", \"type\": \"type\", \"descr\": \"description\", \"price\": 1337}]";
         const data = JSON.parse(json);
         console.log(data);

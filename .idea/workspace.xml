@@ -4,12 +4,10 @@
     <list default="true" id="bc37bf55-ef64-4e19-b4dc-2c6f7120fecf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist/src/components/GiftPanel/GiftPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/components/GiftPanel/GiftPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist/src/components/WishList/WishList.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/components/WishList/WishList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/src/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/pages/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/wishlist/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wishlist/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -44,17 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wishlist/src/pages/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -63,13 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.js">
+        <entry file="file://$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -87,26 +82,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/popular.json">
+        <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="111" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="111" />
+            <state relative-caret-position="340">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#638#753#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wishlist/src/components/WishList/WishList.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wishlist/src/components/UserPanel/UserPanel.js">
+        <entry file="file://$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wishlist/node_modules/react-scripts/lib/react-app.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -167,22 +171,22 @@
         <option value="$PROJECT_DIR$/wishlist/src/pages/Friends/Friends.css" />
         <option value="$PROJECT_DIR$/wishlist/src/components/FriendPanel/FriendPanel.css" />
         <option value="$PROJECT_DIR$/wishlist/src/pages/Home/Home.css" />
-        <option value="$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js" />
-        <option value="$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js" />
         <option value="$PROJECT_DIR$/wishlist/src/components/FriendPanel/FriendPanel.js" />
         <option value="$PROJECT_DIR$/wishlist/src/pages/Home/popular.json" />
         <option value="$PROJECT_DIR$/wishlist/src/components/WishList/WishList.js" />
         <option value="$PROJECT_DIR$/wishlist/src/components/GiftPanel/GiftPanel.js" />
-        <option value="$PROJECT_DIR$/wishlist/src/pages/Home/Home.js" />
-        <option value="$PROJECT_DIR$/wishlist/src/pages/App.js" />
         <option value="$PROJECT_DIR$/wishlist/src/index.js" />
+        <option value="$PROJECT_DIR$/wishlist/src/pages/Home/Home.js" />
+        <option value="$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js" />
         <option value="$PROJECT_DIR$/wishlist/package.json" />
+        <option value="$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js" />
+        <option value="$PROJECT_DIR$/wishlist/src/pages/App.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="170" />
-    <option name="y" value="91" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1026" />
     <option name="height" value="546" />
   </component>
@@ -194,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,52 +214,7 @@
               <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="FriendPanel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="GiftPanel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PageHeader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wishlist_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="wishlist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="WishList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wishlist_frontend" type="b2602c69:ProjectViewProjectNode" />
@@ -285,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,6 +252,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -334,19 +294,22 @@
       <workItem from="1564330814034" duration="6130000" />
       <workItem from="1564409433951" duration="1729000" />
       <workItem from="1564567874669" duration="828000" />
-      <workItem from="1564570535974" duration="8170000" />
+      <workItem from="1564570535974" duration="10731000" />
+      <workItem from="1564587577323" duration="6810000" />
+      <workItem from="1564655993584" duration="11818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90587000" />
+    <option name="totallyTimeSpent" value="111776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="170" y="91" width="1026" height="546" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.298583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21949404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -356,8 +319,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4866828" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,20 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wishlist/src/components/FriendPanel/FriendPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -556,23 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,6 +534,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wishlist/node_modules/react-scripts/lib/react-app.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wishlist/src/components/PageHeader/PageHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wishlist/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -609,12 +565,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/App.js">
+    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#638#753#0" />
           </folding>
         </state>
       </provider>
@@ -629,10 +593,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wishlist/package.json">
+    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/MyProfile/MyProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="221">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wishlist/src/pages/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

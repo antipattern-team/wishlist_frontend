@@ -22,7 +22,7 @@
     color: white;
 }
 .friendInfo{
-
+    text-align: left;
     height: 100px;
     margin-left: 20px;
 }
@@ -32,5 +32,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }

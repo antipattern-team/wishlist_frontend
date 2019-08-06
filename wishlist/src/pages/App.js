@@ -4,7 +4,6 @@ import MyProfile from './MyProfile/MyProfile'
 import { Router,Switch,Route,Redirect} from 'react-router-dom';
 import history from '../utils/history';
 import Friends from './Friends/Friends'
-import connect from '@vkontakte/vkui-connect';
 import './App.css';
 
 class App extends React.Component {

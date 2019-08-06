@@ -5,28 +5,8 @@ import  PageTitle from '../../components/PageTitle/PageTitle'
 import  SearchField from '../../components/SearchField/SearchField'
 import './Home.css'
 import GiftPanel from '../../components/GiftPanel/GiftPanel'
-import None from "../../components/None/None"
 import LoadingIcon from "../../components/LoadingIcon/LoadingIcon"
-import WishList from "../../components/WishList/WishList"
-import {Switch,Route,Redirect} from 'react-router-dom';
-function getPopular() {
-    var popular;
-    fetch('http://wishlist.kpacubo.xyz/products/popular',
-        {
-            method: "GET",
-            mode: "cors",
-            credentials: 'include'
-        })
-        .then(response => {
-            return response.text().then((text) => {
-                return text ? JSON.parse(text) : null;
-            })
-        }).then((data) => {
-            console.log(data.data);
-        popular = data.data;
-    }).catch(() => popular = '');
-    return popular;
-};
+
 export default class Home extends React.Component {
 
     constructor (props)
@@ -53,8 +33,7 @@ export default class Home extends React.Component {
                 this.setState({
                     isLoaded:true,
                     popular: data.data,
-                })
-                console.log(this.state.popular);
+                });
             })
     }
 
@@ -69,7 +48,6 @@ export default class Home extends React.Component {
 
             for ( let i = 0; i < popular.length; i++) {
                 let cur = popular.pop();
-                console.log(cur.name);
                 children.push(React.createElement(
                     GiftPanel,
                     {

@@ -5,7 +5,7 @@ export default class LoadingIcon extends React.Component {
     render() {
         return (
             <div className="loadingArea">
-                <img className="spinner" src={icon}/>
+                <img className="spinner" src={icon} alt=""/>
             </div>
 
         )

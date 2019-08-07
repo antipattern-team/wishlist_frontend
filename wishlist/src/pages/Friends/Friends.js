@@ -23,14 +23,12 @@ export default class Friends extends React.Component {
         connect.subscribe((e) => {
             switch (e.detail.type) {
                 case 'VKWebAppCallAPIMethodResult':
-                    console.log(e.detail);
                     this.setState({
-                        friends: e.detail.data.response.items,
+                        friends: e.detail.data.response,
                         isLoaded:true,
                     });
                     break;
                 case 'VKWebAppAccessTokenReceived':
-                    console.log("кек2");
                     this.setState({
                         accessToken: e.detail.data.access_token,
                         gotToken:true,
@@ -41,7 +39,6 @@ export default class Friends extends React.Component {
             }
         });
         if(!this.state.requestedToken) {
-            console.log("кек");
             connect.send("VKWebAppGetAuthToken", {"app_id": 7070781, "scope": "friends"});
             this.setState({requestedToken:true});
         }
@@ -54,12 +51,13 @@ export default class Friends extends React.Component {
         if (this.state.gotToken && !this.state.requestedFriends )
         {
             connect.send("VKWebAppCallAPIMethod", {
-                "method": "friends.get",
+                "method": "friends.getAppUsers",
                 "request_id": "GetFriends",
-                "params": {"v":"5.8","access_token":this.state.accessToken,"count":"10","fields":"photo_200"}});
+                "params": {"v":"5.8","access_token":this.state.accessToken,}});
             this.setState({
                 requestedFriends:true,
             })
+
         }
         if (this.state.isLoaded)
         {
@@ -67,8 +65,8 @@ export default class Friends extends React.Component {
                 let cur = this.state.friends[i];
                 friendList.push(React.createElement(
                     FriendPanel,{
-                        username:  cur.first_name + " " + cur.last_name,
-                        avatar:cur.photo_200,
+                        id:  cur,
+                        accessToken: this.state.accessToken,
                     }
                 ))
             }

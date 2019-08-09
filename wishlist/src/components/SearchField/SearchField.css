@@ -9,7 +9,17 @@
     line-height: normal;
     letter-spacing: normal;
     border: 0;
-    color: #dddddd;
+}
+option {
+    font-family: "Century Gothic";
+    font-size: 18px;
+}
+.resList{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    width: 325px;
+    border-radius: 40px;
+    border: solid 1px #dddddd;
 }
 .Rectangle{
     margin: 26px auto;
@@ -17,5 +27,4 @@
     height: 50px;
     border-radius: 40px;
     border: solid 1px #dddddd;
-    background-color: #ffffff;
 }

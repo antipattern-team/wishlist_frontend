@@ -20,6 +20,7 @@ class App extends React.Component {
                         <Route path="/my-profile" component={MyProfile}/>
                         <Route path="/home" component={Home}/>
                         <Route path="/user/:accesstoken/:id" component={Profile}/>
+                        <Redirect to = "/home"/>
                     </Switch>
 
                 </div>

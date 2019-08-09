@@ -13,6 +13,8 @@ export default class MyProfile extends React.Component {
             userIsLoaded:false,
             wishlist:[],
             wishlistIsLoaded:false,
+            giftlist:[],
+            giftlistIsLoaded:false,
         };
     }
 
@@ -49,11 +51,30 @@ export default class MyProfile extends React.Component {
                 });
             });
         connect.send('VKWebAppGetUserInfo', {});
+        fetch('https://wishlist.kpacubo.xyz/gifts',
+            {
+                method: "GET",
+                mode: "cors",
+                credentials: 'include'
+            })
+            .then(response => {
+                return response.text().then((text) => {
+                    return text ? JSON.parse(text) : null;
+                })
+            })
+            .then(data=>{
+                if (data!==null)
+                    this.setState({
+                        giftlistIsLoaded:true,
+                        gistlist: data.data,
+                    });
+            });
     }
     render() {
-        var panel;
-        var list = [];
-        var data = this.state.wishlist;
+        let panel;
+        let wlist = [];
+        let glist = [];
+        let data = this.state.wishlist;
         if (this.state.userIsLoaded) {
             var user = this.state.fetchedUser;
             panel = React.createElement(UserPanel, {
@@ -64,12 +85,35 @@ export default class MyProfile extends React.Component {
         else {
             panel = React.createElement(LoadingIcon, {});
         }
+        if (this.state.giftlistIsLoaded)
+        {
+            for ( let i = 0; i < data.length; i++) {
+                let cur = data[i].product;
+                console.log(cur);
+                glist.push(React.createElement(
+                    GiftPanel,
+                    {
+                        name: cur.name,
+                        description: cur.descr,
+                        price: cur.price,
+                        buttonText: "Отмена",
+                        pid:cur.pid,
+                        friendId:data[i].user.id,
+                        method:"DELETE",
+                    }
+                ))
+            }
+        }
+        else
+        {
+            glist.push(React.createElement(LoadingIcon, {}));
+        }
         if (this.state.wishlistIsLoaded)
         {
             for ( let i = 0; i < data.length; i++) {
                 let cur = data[i].product;
                 console.log(cur);
-                list.push(React.createElement(
+                wlist.push(React.createElement(
                     GiftPanel,
                     {
                         name: cur.name,
@@ -77,20 +121,22 @@ export default class MyProfile extends React.Component {
                         price: cur.price,
                         buttonText: "Удалить",
                         pid:cur.pid,
+                        friendId:"",
+                        method:"DELETE"
                     }
                 ))
             }
         }
         else
         {
-            list.push(React.createElement(LoadingIcon, {}));
+            wlist.push(React.createElement(LoadingIcon, {}));
         }
         return (
             <div className="ProfilePage">
-                <PageHeader to="/home" sideButtonText="Вернуться"/>
+                <PageHeader rightButtonTo="/friends" rightButtonText="Друзья" me={true} />
                 {panel}
                 <div className="GiftSection">
-                    {list}
+                    {wlist}
                 </div>
             </div>
         )

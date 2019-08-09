@@ -4,9 +4,11 @@ import connect from "@vkontakte/vkui-connect";
 import UserPanel from "../../components/UserPanel/UserPanel";
 import LoadingIcon from "../../components/LoadingIcon/LoadingIcon";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import GiftPanel from "../../components/GiftPanel/GiftPanel";
 export default class Profile extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             fetchedUser: null,
             userIsLoaded:false,
@@ -44,41 +46,71 @@ export default class Profile extends React.Component {
                     console.log(e.detail.type);
             }
         });
-        fetch('https://wishlist.kpacubo.xyz/wishlist',
-            {
-                method: "GET",
-                mode: "cors",
-                credentials: 'include'
-            })
-            .then(response => {
-                return response.text().then((text) => {
-                    return text ? JSON.parse(text) : null;
-                })
-            })
-            .then(data=>{
-                if (data!==null)
-                    this.setState({
-                        wishlistIsLoaded:true,
-                        wishlist: data.data,
-                    });
-            });
+
     }
+
     render() {
         let panel;
+        let list = [];
+        var data = this.state.wishlist;
         if (this.state.userIsLoaded) {
             var user = this.state.fetchedUser;
             panel = React.createElement(UserPanel, {
                 username: user.first_name + " " + user.last_name,
                 profilePic: user.photo_200,
-            })
+            });
+            if (!this.state.requested){
+            fetch('https://wishlist.kpacubo.xyz/wishlist/'+user.id,
+                {
+                    method: "GET",
+                    mode: "cors",
+                    credentials: 'include'
+                })
+                .then(response => {
+                    return response.text().then((text) => {
+                        return text ? JSON.parse(text) : null;
+                    })
+                })
+                .then(data=>{
+                    if (data!==null)
+                        this.setState({
+                            wishlistIsLoaded:true,
+                            wishlist: data.data,
+                        });
+                });
+            this.setState({requested:true})
+            }
         }
         else {
             panel = React.createElement(LoadingIcon, {});
         }
+        if (this.state.wishlistIsLoaded && data!==undefined)
+        {
+            for ( let i = 0; i < data.length; i++) {
+                let cur = data[i].product;
+                console.log(cur);
+                list.push(React.createElement(
+                    GiftPanel,
+                    {
+                        name: cur.name,
+                        description: cur.descr,
+                        price: cur.price,
+                        buttonText: data[i].reserved?"Отмена":"Забронировать",
+                        pid:cur.pid,
+                        method:data[i].reserved?"DELETE":"POST"
+                    }
+                ))
+            }
+        }
+        else
+        {
+            list.push(React.createElement(LoadingIcon, {}));
+        }
         return (
             <div>
-                <PageHeader to="/friends" sideButtonText="Друзья"/>
+                <PageHeader rightButtonTo="/friends" rightButtonText="Друзья" me={false}/>
                 {panel}
+                {list}
             </div>
         );
     }

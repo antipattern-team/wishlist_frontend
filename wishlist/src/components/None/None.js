@@ -7,8 +7,7 @@ export default class None extends React.Component {
         return (
             <div className="loadingArea">
                 <img className="emoji" src={emoji} alt=""/>
-                <p>К сожалению ваш список желаемого пуст</p>
-                <Link to="/home" className="proposal">Выбрать что-нибудь из списка попурярного</Link>
+                <p>{this.props.caption}</p>
             </div>
 
         )

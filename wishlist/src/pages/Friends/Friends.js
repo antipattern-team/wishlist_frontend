@@ -77,7 +77,7 @@ export default class Friends extends React.Component {
         }
         return (
             <div className="friendsPage">
-                <PageHeader to="/home" sideButtonText="Вернуться"/>
+                <PageHeader rightButtonTo="/home" rightButtonText="Вернуться" me={false}/>
                 <div className="friendsTop">
                     <PageTitle text="Мои Друзья"/>
                     <SearchField defaultCaption="Начните вводить имя друга..."/>
